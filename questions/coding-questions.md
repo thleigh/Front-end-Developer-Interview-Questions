@@ -8,17 +8,21 @@ Question: What is the value of `foo`?
 ```javascript
 var foo = 10 + '20';
 ```
+ - foo = 1020 because its a string concat operation
 
 Question: What will be the output of the code below?
 ```javascript
 console.log(0.1 + 0.2 == 0.3);
 ```
+ - False because floating point numbers are rounded.
+ - The expected result is 0.3000000000000004 == 0.3
 
 Question: How would you make this work?
 ```javascript
 add(2, 5); // 7
 add(2)(5); // 7
 ```
+
 
 Question: What value is returned from the following statement?
 ```javascript
