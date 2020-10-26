@@ -22,6 +22,7 @@ Question: How would you make this work?
 add(2, 5); // 7
 add(2)(5); // 7
 ```
+Answer: 
 ```javascript
   function add(x, y) {
     if(arguments.length == 2) {
@@ -37,11 +38,13 @@ Question: What value is returned from the following statement?
 ```javascript
 "i'm a lasagna hog".split("").reverse().join("");
 ```
+ - "goh angasal a m'i"
 
 Question: What is the value of `window.foo`?
 ```javascript
 ( window.foo || ( window.foo = "bar" ) );
 ```
+ - window.foo = bar because the first window.foo is undefined so it will move to the next window.foo.  '||' means or. 
 
 Question: What is the outcome of the two alerts below?
 ```javascript
@@ -52,6 +55,7 @@ var foo = "Hello";
 })();
 alert(foo + bar);
 ```
+- The first alert will return "Hello World" and the second one will return undefined since bar is not defined globally.
 
 Question: What is the value of `foo.length`?
 ```javascript
