@@ -22,7 +22,16 @@ Question: How would you make this work?
 add(2, 5); // 7
 add(2)(5); // 7
 ```
-
+```javascript
+  function add(x, y) {
+    if(arguments.length == 2) {
+      return function(y) { 
+        return x + y
+      };
+    };
+    return x + y
+  }
+```
 
 Question: What value is returned from the following statement?
 ```javascript
