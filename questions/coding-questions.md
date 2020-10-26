@@ -63,6 +63,7 @@ var foo = [];
 foo.push(1);
 foo.push(2);
 ```
+- The value will be 2.
 
 Question: What is the value of `foo.x`?
 ```javascript
@@ -70,6 +71,7 @@ var foo = {n: 1};
 var bar = foo;
 foo.x = foo = {n: 2};
 ```
+- undefined
 
 Question: What does the following code print?
 ```javascript
